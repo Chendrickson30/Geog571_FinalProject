@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+body {
+    background-color: black;
+    font-family: 'Quintessential', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    padding: 20px;
+}
+
+#map-container,
+#map-container2 {
+    flex: 0 0 48%;
+    position: relative;
+}
+
+#map,
+#map2 {
+    width: 100%;
+    height: calc(100vh - 200px);
+    background-color: #000;
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
+}
+
+#map-container h3,
+#map-container2 h3 {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: 'Quintessential', cursive;
+    font-size: 20px;
+    margin: 0;
+    z-index: 2;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+#map-container h3 {
+    margin-top: 2px;
+}
+
+#map-container2 h3 {
+    margin-top: 2px; /* Adjusted top margin */
+}
+
+h2 {
+    color: #d9d9d9;
+    text-align: center;
+    margin-bottom: 2px;
+    font-family: 'Quintessential';
+    font-size: 30px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+#slider-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.slider {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#slider-value {
+    color: white;
+    font-size: 16px;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px 'Quintessential', cursive;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    color: black; /* Adjust text color for info box */
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.info2 {
+    padding: 6px 8px;
+    font: 14px/16px 'Quintessential', cursive;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    color: black; /* Adjust text color for info box */
+}
+
+.info2 h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.legend {
+    padding: 6px 8px;
+    text-align: left;
+    line-height: 18px;
+    font-family: 'Quintessential', cursive;
+    color: #131313;
+    background: white;
+    background: rgba(255,255,255,0.8);
+}
+
+.legend i { /* this controls the icons, i is calling th i function from the js*/
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+.legend2 {
+    padding: 6px 8px;
+    text-align: left;
+    line-height: 18px;
+    color: #555;
+    background: white;
+    background: rgba(255,255,255,0.8);
+}
+
+.legend j { /* this controls the icons, i is calling th i function from the js*/
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}

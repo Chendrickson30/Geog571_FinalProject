@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Precipitation Means of Oregon Watersheds (HUC-10)</title>
+    <link href='https://fonts.googleapis.com/css?family=Quintessential' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Annual Precipitation Means Across Oregon HUC-10 Watersheds</h2>
+
+    <div class="container">
+        <div id="map-container">
+            <h3>Annual Mean Precipitation (1981 - 2020)</h3>
+            <div id="map"></div>
+        </div>
+
+        <div id="map-container2">
+            <h3>Annual Mean Precipitation - 30 Year Normals (1991 - 2020)</h3>
+            <div id="map2"></div>
+        </div>
+    </div>
+
+    <!-- Add the slider element here -->
+    <div id="slider-container">
+        <input type="range" min="1981" max="2020" value="1981" step="1" id="year-slider" class="slider">
+        <span id="slider-value">1981</span>
+    </div>
+
+    <!-- Include Leaflet library (included in <head>) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <!-- Include your JavaScript files -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
